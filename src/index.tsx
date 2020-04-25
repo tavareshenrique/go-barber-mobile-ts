@@ -1,9 +1,11 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
+
+import Dashboard from '~/components/Dashboard';
 
 const App: React.FC = () => (
   <View>
-    <Text>GoBarber</Text>
+    <Dashboard />
   </View>
 );
 export default App;
