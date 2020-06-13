@@ -16,7 +16,7 @@ import { Form } from '@unform/mobile';
 import { FormHandles } from '@unform/core';
 
 import Icon from 'react-native-vector-icons/Feather';
-import { useAuth } from '~/hooks/AuthContext';
+import { useAuth } from '~/hooks/auth';
 
 import getValidationErrors from '~/utils/getValidationErrors';
 
