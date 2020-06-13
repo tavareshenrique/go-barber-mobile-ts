@@ -6,6 +6,8 @@ import { useAuth } from '~/hooks/auth';
 
 import api from '~/services/api';
 
+import scissorImg from '~/assets/scissor.png';
+
 import { RouteParams, Provider } from './interfaces';
 
 import {
@@ -71,11 +73,16 @@ const CreateAppointment: React.FC = () => {
               onPress={() => handleSelectProvider(provider.id)}
               selected={provider.id === selectedProvider}
             >
-              <ProviderAvatar
-                source={{
-                  uri: provider.avatar_url,
-                }}
-              />
+              {provider.avatar_url ? (
+                <ProviderAvatar
+                  source={{
+                    uri: provider.avatar_url,
+                  }}
+                />
+              ) : (
+                <ProviderAvatar source={scissorImg} />
+              )}
+
               <ProviderName selected={provider.id === selectedProvider}>
                 {provider.name}
               </ProviderName>
