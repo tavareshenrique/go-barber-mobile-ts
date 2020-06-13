@@ -7,3 +7,8 @@ export interface Provider {
   name: string;
   avatar_url: string;
 }
+
+export interface AvailabilityItem {
+  hour: number;
+  available: boolean;
+}
