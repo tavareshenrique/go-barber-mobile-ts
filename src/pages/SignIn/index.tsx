@@ -25,6 +25,8 @@ import Button from '~/components/Button';
 
 import logoImg from '~/assets/logo.png';
 
+import { SignInFormData } from './interfaces';
+
 import {
   Container,
   Title,
@@ -33,11 +35,6 @@ import {
   CreateAccountButton,
   CreateAccountText,
 } from './styles';
-
-interface SignInFormData {
-  email: string;
-  password: string;
-}
 
 const SignIn: React.FC = () => {
   const formRef = useRef<FormHandles>(null);

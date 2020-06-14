@@ -27,18 +27,14 @@ import Button from '~/components/Button';
 
 import logoImg from '~/assets/logo.png';
 
+import { SignUpFormData } from './interfaces';
+
 import {
   Container,
   Title,
   BackToSignInButton,
   BackToSignInText,
 } from './styles';
-
-interface SignUpFormData {
-  name: string;
-  email: string;
-  password: string;
-}
 
 const SignUp: React.FC = () => {
   const formRef = useRef<FormHandles>(null);

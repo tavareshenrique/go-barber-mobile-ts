@@ -26,6 +26,8 @@ import getValidationErrors from '~/utils/getValidationErrors';
 import Input from '~/components/Input';
 import Button from '~/components/Button';
 
+import { ProfileFormData } from './interfaces';
+
 import {
   Container,
   BackButton,
@@ -33,14 +35,6 @@ import {
   UserAvatarButton,
   UserAvatar,
 } from './styles';
-
-interface ProfileFormData {
-  name: string;
-  email: string;
-  old_password: string;
-  password: string;
-  password_confirmation: string;
-}
 
 const SignUp: React.FC = () => {
   const formRef = useRef<FormHandles>(null);

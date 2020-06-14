@@ -6,24 +6,11 @@ import React, {
   useState,
   useCallback,
 } from 'react';
-import { TextInputProps } from 'react-native';
 import { useField } from '@unform/core';
 
+import { InputProps, InputRef, InputValueReference } from './interfaces';
+
 import { Container, TextInput, Icon } from './styles';
-
-interface InputProps extends TextInputProps {
-  name: string;
-  icon: string;
-  containerStyle?: {};
-}
-
-interface InputValueReference {
-  value: string;
-}
-
-interface InputRef {
-  focus(): void;
-}
 
 const Input: React.RefForwardingComponent<InputRef, InputProps> = (
   { name, icon, containerStyle = {}, ...rest },
