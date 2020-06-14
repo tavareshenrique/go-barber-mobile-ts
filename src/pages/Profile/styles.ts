@@ -1,9 +1,8 @@
 import styled from 'styled-components/native';
 import { Platform } from 'react-native';
 
-export const Container = styled.View`
+export const Container = styled.ScrollView`
   flex: 1;
-  justify-content: flex-start;
   padding: 0 30px ${Platform.OS === 'android' ? 120 : 40}px;
   position: relative;
 `;
