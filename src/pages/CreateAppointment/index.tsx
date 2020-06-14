@@ -226,7 +226,9 @@ const CreateAppointment: React.FC = () => {
                   available={available}
                   onPress={() => handleSelectHour(hour)}
                 >
-                  <HourText>{hourFormatted}</HourText>
+                  <HourText selected={selectedHour === hour}>
+                    {hourFormatted}
+                  </HourText>
                 </Hour>
               ))}
             </SectionContent>
