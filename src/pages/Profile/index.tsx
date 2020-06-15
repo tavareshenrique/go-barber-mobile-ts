@@ -257,7 +257,14 @@ const SignUp: React.FC = () => {
                 Confirmar Mudanças
               </Button>
 
-              <Button onPress={signOut}>Sair</Button>
+              <Button
+                onPress={signOut}
+                color="#EB5160"
+                fontColor="#fff"
+                containerStyle={{ marginTop: 16, marginBottom: 16 }}
+              >
+                Sair
+              </Button>
             </Form>
           </Container>
         </ScrollView>
